@@ -1,0 +1,5 @@
+# If you don't want this, you can "disable" this file this way:
+# sudo mkdir /etc/systemd/system-preset
+# ln -sf /dev/null /etc/systemd/system-preset/99-default.preset
+
+disable *
