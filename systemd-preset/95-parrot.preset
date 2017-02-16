@@ -1,0 +1,100 @@
+# List of services which can be safely enabled by default
+#
+# This usually includes all non network-facing services.
+
+# System wide stuff that needs to be enabled
+enable systemd-cryptsetup@.service
+enable systemd-modules-load.service
+enable systemd-sysctl.service
+enable systemd-udevd.service
+enable systemd-random-seed.service
+enable systemd-journal-flush.service
+enable systemd-journald.service
+enable kmod-static-nodes.service
+enable live-tools.service
+
+# Disable all sockets by default excepted whitelisted ones
+enable dbus.socket
+enable dm-event.socket
+enable lvm2-*.socket
+enable libvirtd.socket
+enable pcscd.socket
+enable rpcbind.socket
+enable syslog.socket
+enable systemd-fsckd.socket
+enable systemd-initctl.socket
+enable systemd-journald-audit.socket
+enable systemd-journald-dev-log.socket
+enable systemd-journald.socket
+enable systemd-rfkill.socket
+enable systemd-udevd-control.socket
+enable systemd-udevd-kernel.socket
+enable uuidd.socket
+enable virtlockd.socket
+enable virtlogd.socket
+disable *.socket
+
+# Other services that are safe to enable
+enable accounts-daemon.service
+enable acpid.service
+enable acpi-*.service
+enable alsa-*.service
+enable anacron.service
+enable anacron-resume.service
+enable atd.service
+enable atop.service
+enable autovt@.service
+enable binfmt-support.service
+enable bluetooth.device
+enable bluetooth.service
+enable bluez.service
+enable console-setup.service
+enable cpufrequtils.service
+enable cron.service
+enable dbus.service
+enable ebtables.service
+enable etc-setserial.service
+enable fetchmail.service
+enable gdm.service
+enable irqbalance.service
+enable hdparm.service
+enable kbd.service
+enable kerneloops.service
+enable keyboard-setup.service
+enable kmod.service
+enable libvirt-*.service
+enable virtlockd.service
+enable virtlogd.service
+enable loadcpufreq.service
+enable lxc.service
+enable lvm2-pvscan@.service
+enable lvm2-monitor@.service
+enable mcstrans.service
+enable ModemManager.service
+enable networking.service
+enable network-manager.service
+enable NetworkManager.service
+enable nfs-common.service
+enable packagekit.service
+enable polkitd.service
+enable pppd-dns.service
+enable procps.service
+enable pulseaudio.service
+enable qemu-kvm.service
+enable rc.local.service
+enable rdnssd.service
+enable restorecond.service
+enable rsync.service
+enable rsyslog.service
+enable rtkit-daemon.service
+enable schroot.service
+enable setserial.service
+enable smartd.service
+enable smartmontools.service
+enable spamassassin.service
+enable speech-dispatcher.service
+enable sudo.service
+enable udev.service
+enable uml-utilities.service
+enable urandom.service
+enable virtualbox.service

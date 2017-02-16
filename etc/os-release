@@ -1,0 +1,10 @@
+PRETTY_NAME="Parrot GNU/Linux 3.5 CyberGaleon"
+NAME="Parrot GNU/Linux"
+ID=parrot
+VERSION="3.5 (CyberGalleon)"
+VERSION_ID="3.5"
+ID_LIKE=debian
+ANSI_COLOR="1;31"
+HOME_URL="https://www.parrotsec.org/"
+SUPPORT_URL="https://community.parrotsec.org/"
+BUG_REPORT_URL="https://community.parrotsec.org/"
