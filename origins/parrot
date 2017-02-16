@@ -1,4 +1,4 @@
 Vendor: Parrot
-Vendor-URL: http://www.parrotsec.org/
+Vendor-URL: https://www.parrotsec.org/
 Parent: debian
-Bugs: http://bugs.parrotsec.org
+Bugs: https://community.parrotsec.org

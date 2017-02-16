@@ -1,3 +1,9 @@
+base-files (1:2017.2parrot0) testing; urgency=medium
+
+  * Update for Parrot GNU/Linux 3.5
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Fri, 17 Feb 2017 03:57:22 +1100
+
 base-files (1:2016.4parrot1) testing; urgency=medium
 
   * Minor fixes

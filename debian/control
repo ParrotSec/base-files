@@ -3,7 +3,7 @@ Section: admin
 Priority: required
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
-Standards-Version: 3.9.7
+Standards-Version: 3.9.8
 Build-Depends: debhelper (>= 9)
 
 Package: base-files
