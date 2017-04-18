@@ -1,8 +1,8 @@
 Source: base-files
 Section: admin
 Priority: required
-Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
-Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 3.9.8
 Build-Depends: debhelper (>= 9)
 
@@ -13,7 +13,7 @@ Pre-Depends: awk
 Depends: ${misc:Depends}
 Essential: yes
 Priority: required
-Replaces: base, miscutils, dpkg (<= 1.15.0)
+Replaces: base, miscutils, dpkg (<= 1.15.0), parrot-core
 Breaks: initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
 Multi-Arch: foreign
 Description: Debian base system miscellaneous files

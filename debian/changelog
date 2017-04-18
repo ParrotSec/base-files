@@ -1,3 +1,9 @@
+base-files (1:2017.4parrot0) testing; urgency=medium
+
+  * Update for Parrot GNU/Linux 3.6
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 18 Apr 2017 16:46:26 +0200
+
 base-files (1:2017.2parrot0) testing; urgency=medium
 
   * Update for Parrot GNU/Linux 3.5
