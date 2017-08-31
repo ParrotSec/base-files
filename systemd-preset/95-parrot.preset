@@ -12,14 +12,13 @@ enable systemd-journal-flush.service
 enable systemd-journald.service
 enable kmod-static-nodes.service
 enable live-tools.service
+enable resolvconf.service
 
 # Disable all sockets by default excepted whitelisted ones
 enable dbus.socket
 enable dm-event.socket
 enable lvm2-*.socket
-enable libvirtd.socket
 enable pcscd.socket
-enable rpcbind.socket
 enable syslog.socket
 enable systemd-fsckd.socket
 enable systemd-initctl.socket

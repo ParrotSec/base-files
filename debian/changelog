@@ -1,12 +1,24 @@
+base-files (1:2017.8parrot0) testing; urgency=medium
+
+  * Update for Parrot 3.8.
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Thu, 31 Aug 2017 02:37:09 +0200
+
+base-files (1:2017.6parrot0) testing; urgency=medium
+
+  * Update for Parrot 3.7.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jun 2017 19:44:44 +0200
+
 base-files (1:2017.4parrot0) testing; urgency=medium
 
-  * Update for Parrot GNU/Linux 3.6
+  * Update for Parrot 3.6.
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 18 Apr 2017 16:46:26 +0200
 
 base-files (1:2017.2parrot0) testing; urgency=medium
 
-  * Update for Parrot GNU/Linux 3.5
+  * Update for Parrot GNU/Linux 3.5.
 
  -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Fri, 17 Feb 2017 03:57:22 +1100
 

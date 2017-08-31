@@ -3,8 +3,8 @@ Section: admin
 Priority: required
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
-Standards-Version: 3.9.8
-Build-Depends: debhelper (>= 9)
+Standards-Version: 4.0.0
+Build-Depends: debhelper (>= 10)
 
 Package: base-files
 Provides: base
