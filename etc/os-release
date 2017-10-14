@@ -1,8 +1,8 @@
-PRETTY_NAME="Parrot GNU/Linux 3.8 JollyRoger"
+PRETTY_NAME="Parrot GNU/Linux 3.9 Intruder"
 NAME="Parrot GNU/Linux"
 ID=parrot
-VERSION="3.8 (JollyRoger)"
-VERSION_ID="3.8"
+VERSION="3.9 (Intruder)"
+VERSION_ID="3.9"
 ID_LIKE=debian
 ANSI_COLOR="1;31"
 HOME_URL="https://www.parrotsec.org/"

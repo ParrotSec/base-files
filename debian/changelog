@@ -1,3 +1,9 @@
+base-files (1:2017.10parrot0) testing; urgency=medium
+
+  * Bump new Parrot version (3.9 Intruder).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 14 Oct 2017 23:36:16 +0200
+
 base-files (1:2017.8parrot0) testing; urgency=medium
 
   * Update for Parrot 3.8.
