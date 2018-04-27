@@ -1,10 +1,9 @@
-PRETTY_NAME="Parrot GNU/Linux 3.11"
-NAME="Parrot GNU/Linux"
+PRETTY_NAME="Parrot #OSNAME# 4.0-beta"
+NAME="Parrot #OSNAME#"
 ID=parrot
-VERSION="3.11"
-VERSION_ID="3.11"
 ID_LIKE=debian
-ANSI_COLOR="1;31"
+VERSION="4.0-beta"
+VERSION_ID="4.0-beta"
 HOME_URL="https://www.parrotsec.org/"
 SUPPORT_URL="https://community.parrotsec.org/"
 BUG_REPORT_URL="https://dev.parrotsec.org/"

@@ -6,9 +6,9 @@ etc/default
 etc/dpkg/origins
 etc/profile.d
 etc/skel
+etc/update-motd.d
 home
 lib
-lib/systemd/system-preset
 proc
 root
 run
