@@ -1,9 +1,9 @@
-PRETTY_NAME="Parrot #OSNAME# 4.0-beta"
+PRETTY_NAME="Parrot #OSNAME# 4.0"
 NAME="Parrot #OSNAME#"
 ID=parrot
 ID_LIKE=debian
-VERSION="4.0-beta"
-VERSION_ID="4.0-beta"
+VERSION="4.0"
+VERSION_ID="4.0"
 HOME_URL="https://www.parrotsec.org/"
 SUPPORT_URL="https://community.parrotsec.org/"
 BUG_REPORT_URL="https://dev.parrotsec.org/"
