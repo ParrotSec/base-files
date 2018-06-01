@@ -1,3 +1,9 @@
+base-files (1:2018.06parrot1) testing; urgency=medium
+
+  * Update for Parrot 4.1.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 02 Jun 2018 01:27:29 +0200
+
 base-files (1:2018.05parrot1) testing; urgency=medium
 
   * Update for Parrot 4.0.

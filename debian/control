@@ -10,7 +10,6 @@ Provides: base
 Architecture: any
 Pre-Depends: awk
 Depends: ${misc:Depends}
-Suggests: parrot-core, apt-parrot
 Essential: yes
 Priority: required
 Replaces: base, miscutils, dpkg (<= 1.15.0)
