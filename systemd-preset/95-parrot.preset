@@ -18,7 +18,6 @@ enable resolvconf.service
 enable dbus.socket
 enable dm-event.socket
 enable lvm2-*.socket
-enable pcscd.socket
 enable syslog.socket
 enable systemd-fsckd.socket
 enable systemd-initctl.socket

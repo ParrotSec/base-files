@@ -1,3 +1,16 @@
+base-files (1:2018.09parrot1) testing; urgency=medium
+
+  * Bump Parrot version 4.2.1.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Sep 2018 23:40:43 +0200
+
+base-files (1:2018.08parrot1) testing; urgency=medium
+
+  * Update version files in /etc for Parrot 4.2.
+  * Disable pcscd in systemd settings.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 09 Aug 2018 18:48:30 +0200
+
 base-files (1:2018.06parrot2) testing; urgency=medium
 
   * Update version files in /etc for Parrot 4.1.
