@@ -1,3 +1,9 @@
+base-files (1:2018.09parrot2) testing; urgency=medium
+
+  * Bump Parrot version 4.2.2.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Sep 2018 17:05:06 +0200
+
 base-files (1:2018.09parrot1) testing; urgency=medium
 
   * Bump Parrot version 4.2.1.
