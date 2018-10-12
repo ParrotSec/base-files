@@ -1,3 +1,11 @@
+base-files (1:2018.10parrot1) testing; urgency=medium
+
+  * Don't overwrite existing PATH in /etc/dot.bashrc.
+  * Add /snap/bin to PATH.
+  * Bump Parrot 4.3 version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 13 Oct 2018 01:51:03 +0200
+
 base-files (1:2018.09parrot2) testing; urgency=medium
 
   * Bump Parrot version 4.2.2.
