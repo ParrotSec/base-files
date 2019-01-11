@@ -1,3 +1,9 @@
+base-files (1:2019.01parrot1) testing; urgency=medium
+
+  * Bump Parrot 4.5 version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 11 Jan 2019 23:27:18 +0100
+
 base-files (1:2018.11parrot1) testing; urgency=medium
 
   * Bump Parrot 4.4 version.
