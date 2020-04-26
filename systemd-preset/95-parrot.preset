@@ -103,6 +103,7 @@ disable systemd-resolved.service
 
 # Network services to disable
 disable apache2.service
+disable anonsurfd.service
 disable avahi-daemon.*
 disable couchdb.service
 disable clamav-*
