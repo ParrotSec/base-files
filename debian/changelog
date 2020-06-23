@@ -1,3 +1,9 @@
+base-files (1:2020.06.1) rolling; urgency=medium
+
+  * Fix missing motd file.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jun 2020 19:17:51 +0200
+
 base-files (1:2020.06) rolling; urgency=medium
 
   * Bump Parrot 4.10 version.
