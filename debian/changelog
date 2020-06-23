@@ -1,3 +1,10 @@
+base-files (1:2020.06) rolling; urgency=medium
+
+  * Bump Parrot 4.10 version.
+  * Update motd.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jun 2020 18:35:45 +0200
+
 base-files (1:2020.04parrot1) rolling; urgency=medium
 
   * Bump Parrot 4.9 version.
