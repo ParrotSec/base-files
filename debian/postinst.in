@@ -45,8 +45,16 @@ update_to_current_default() {
 }
 
 if [ ! -e /etc/dpkg/origins/default ]; then
-  if [ -e /etc/dpkg/origins/#VENDORFILE# ]; then
+  if [ -e /etc/dpkg/origins/parrot ]; then
+    ln -sf parrot /etc/dpkg/origins/default
+  elif [ -e /etc/dpkg/origins/#VENDORFILE# ]; then
     ln -sf #VENDORFILE# /etc/dpkg/origins/default
+  fi
+else
+  if [ -e /etc/dpkg/origins/parrot ]; then
+    if ! dpkg-vendor --is Parrot; then
+      ln -sf parrot /etc/dpkg/origins/default
+    fi
   fi
 fi
 
