@@ -1,9 +1,9 @@
-PRETTY_NAME="Parrot OS 4.11"
+PRETTY_NAME="Parrot OS 5.0 (LTS)"
 NAME="Parrot OS"
-ID=parrot
-ID_LIKE=debian
-VERSION="4.11"
-VERSION_ID="4.11"
+VERSION_ID="5.0"
+VERSION="5.0 (LTS)"
+VERSION_CODENAME=bullseye
+ID=debian
 HOME_URL="https://www.parrotsec.org/"
 SUPPORT_URL="https://community.parrotsec.org/"
 BUG_REPORT_URL="https://community.parrotsec.org/"

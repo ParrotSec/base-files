@@ -45,23 +45,12 @@ update_to_current_default() {
 }
 
 if [ ! -e /etc/dpkg/origins/default ]; then
-  if [ -e /etc/dpkg/origins/parrot ]; then
-    ln -sf parrot /etc/dpkg/origins/default
-  elif [ -e /etc/dpkg/origins/#VENDORFILE# ]; then
+  if [ -e /etc/dpkg/origins/#VENDORFILE# ]; then
     ln -sf #VENDORFILE# /etc/dpkg/origins/default
-  fi
-else
-  if [ -e /etc/dpkg/origins/parrot ]; then
-    if ! dpkg-vendor --is Parrot; then
-      ln -sf parrot /etc/dpkg/origins/default
-    fi
   fi
 fi
 
 if [ "$1" = "configure" ] && [ "$2" = "" ]; then
-  install_from_default staff-group-for-usr-local \
-                                     /etc/staff-group-for-usr-local
-  install_from_default nsswitch.conf /etc/nsswitch.conf
   install_from_default dot.profile   /root/.profile
   install_from_default dot.bashrc    /root/.bashrc
   install_from_default profile       /etc/profile
@@ -119,21 +108,15 @@ if [ ! -f /var/lib/dpkg/status ]; then
   chmod 644 /var/lib/dpkg/status
 fi
 
-if [ ! -f /usr/info/dir ] && [ ! -f /usr/share/info/dir ]; then
+if [ -d /usr/share/info ] && [ ! -f /usr/info/dir ] && [ ! -f /usr/share/info/dir ]; then
   install_from_default info.dir /usr/share/info/dir
   chmod 644 /usr/share/info/dir
 fi
 
 if [ "$1" = "configure" ] && [ "$2" != "" ]; then
   update_to_current_default profile       /etc/profile
-  update_to_current_default nsswitch.conf /etc/nsswitch.conf
   update_to_current_default dot.profile   /root/.profile
   if dpkg --compare-versions "$2" lt-nl "7.7"; then
     install_directory mnt 755 root
   fi
-fi
-
-if dpkg --compare-versions "$2" lt-nl "6.10"; then
-  install_from_default staff-group-for-usr-local \
-    /etc/staff-group-for-usr-local
 fi

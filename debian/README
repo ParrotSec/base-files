@@ -4,10 +4,10 @@ Frequently Asked Questions about base-files
 * Questions about /etc/issue and /etc/debian_version:
 
 Q. I upgraded my system to the testing distribution and now my /etc/issue
-says "buster/sid". Should it not read "buster" or "testing"?
+says "bookworm/sid". Should it not read "bookworm" or "testing"?
 
 Q. I upgraded my system to the unstable distribution and now my /etc/issue
-says "buster/sid". Should it not read "sid" or "unstable"?
+says "bookworm/sid". Should it not read "sid" or "unstable"?
 
 A. That would be nice, but it is not possible because of the way the
 testing distribution works. Packages uploaded for unstable reach
@@ -17,9 +17,9 @@ testing. You should consider the testing and unstable distributions as
 two sides of the same coin. Since the base-files package in testing
 was initially uploaded for unstable, the only sensible /etc/issue to
 have is one that is both valid for testing and unstable, hence
-"buster/sid" (or whatever is appropriate).
+"bookworm/sid" (or whatever is appropriate).
 
-Q. Why "buster/sid" and not "testing/unstable" as it used to be?
+Q. Why "bookworm/sid" and not "testing/unstable" as it used to be?
 
 A. The codename is a little bit more informative, as the meaning of
 "testing" changes over time.
@@ -31,7 +31,7 @@ not a reliable way to know that anymore. Looking at the contents of
 your /etc/apt/sources.list file is probably a much better way.
 
 Q. There is a new point release and I've just upgraded my system.
-The /etc/debian_version file now says 8.x but /etc/issue still says 8.
+The /etc/debian_version file now says 10.x but /etc/issue still says 10.
 Is this ok?
 
 A. Yes. The release managers asked me not to touch /etc/issue, as that's
