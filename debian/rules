@@ -8,7 +8,7 @@ ifeq ($(DEB_HOST_GNU_SYSTEM),gnu)
   OSNAME=GNU/Hurd
 endif
 
-VENDORFILE = debian
+VENDORFILE = parrot
 DESTDIR = debian/base-files
 
 %:

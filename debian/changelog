@@ -1,3 +1,9 @@
+base-files (1:2021.08.16) lts-updates; urgency=medium
+
+  * Make use of proper vendor file.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 16 Aug 2021 05:22:05 +0200
+
 base-files (1:2021.07.30) lts; urgency=medium
 
   * Update for Parrot 5.0 LTS.
