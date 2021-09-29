@@ -64,6 +64,7 @@ disable saned.service
 disable smbd.service
 disable snmpd.service
 disable ssh.service
+disable strongswan-starter.service
 disable stunnel*
 disable winbind.service
 disable thin.service

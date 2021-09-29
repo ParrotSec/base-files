@@ -1,3 +1,9 @@
+base-files (1:2021.09.29) lts-updates; urgency=medium
+
+  * Blacklist strongswan daemon.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Sep 2021 02:21:24 +0200
+
 base-files (1:2021.08.16) lts-updates; urgency=medium
 
   * Make use of proper vendor file.
