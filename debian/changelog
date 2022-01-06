@@ -1,3 +1,9 @@
+base-files (1:2021.09.29+parrot1) lts-updates; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 18:34:52 +0100
+
 base-files (1:2021.09.29) lts-updates; urgency=medium
 
   * Blacklist strongswan daemon.
