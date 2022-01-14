@@ -1,3 +1,15 @@
+base-files (1:2021.09.29+parrot4) parrot-updates; urgency=medium
+
+  * Woops. don't copy .profile in skel.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 03:34:39 +0100
+
+base-files (1:2021.09.29+parrot3) parrot-updates; urgency=medium
+
+  * Fix missing bashrc in skel.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 03:18:30 +0100
+
 base-files (1:2021.09.29+parrot2) parrot-updates; urgency=medium
 
   * Update os-release.

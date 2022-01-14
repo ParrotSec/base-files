@@ -15,7 +15,6 @@ DESTDIR = debian/base-files
 	dh $@
 
 override_dh_auto_build:
-	sh debian/check-md5sum-etc profile
 	sed -e "s&#OSNAME#&$(OSNAME)&g" debian/copyright.in > debian/copyright
 	sed -e "s/#VENDORFILE#/$(VENDORFILE)/g" debian/postinst.in > debian/postinst
 
@@ -26,6 +25,7 @@ override_dh_auto_install:
 	install -p -m 644 origins/*  $(DESTDIR)/etc/dpkg/origins
 	install -p -m 644 share/*    $(DESTDIR)/usr/share/base-files
 	install -p -m 644 systemd-preset/*    $(DESTDIR)/lib/systemd/system-preset
+	install -p -m 644 share/dot.bashrc  $(DESTDIR)/etc/skel/.bashrc
 ifeq ($(DEB_HOST_GNU_SYSTEM),gnu)
 	rmdir $(DESTDIR)/sys
 endif
