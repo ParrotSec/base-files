@@ -1,3 +1,11 @@
+base-files (1:2021.09.29+parrot2) parrot-updates; urgency=medium
+
+  * Update os-release.
+    + Fixes wrong ID and ID_LIKE fields
+    + Adds LTS as temporary codename.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 01:57:43 +0100
+
 base-files (1:2021.09.29+parrot1) lts-updates; urgency=medium
 
   * Rebuild package.
