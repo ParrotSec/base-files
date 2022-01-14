@@ -1,3 +1,9 @@
+base-files (1:2021.09.29+parrot5) parrot-updates; urgency=medium
+
+  * Use postinst to copy bashrc.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 04:34:07 +0100
+
 base-files (1:2021.09.29+parrot4) parrot-updates; urgency=medium
 
   * Woops. don't copy .profile in skel.

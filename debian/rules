@@ -25,7 +25,6 @@ override_dh_auto_install:
 	install -p -m 644 origins/*  $(DESTDIR)/etc/dpkg/origins
 	install -p -m 644 share/*    $(DESTDIR)/usr/share/base-files
 	install -p -m 644 systemd-preset/*    $(DESTDIR)/lib/systemd/system-preset
-	install -p -m 644 share/dot.bashrc  $(DESTDIR)/etc/skel/.bashrc
 ifeq ($(DEB_HOST_GNU_SYSTEM),gnu)
 	rmdir $(DESTDIR)/sys
 endif

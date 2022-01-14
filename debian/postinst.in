@@ -53,6 +53,7 @@ fi
 if [ "$1" = "configure" ] && [ "$2" = "" ]; then
   install_from_default dot.profile   /root/.profile
   install_from_default dot.bashrc    /root/.bashrc
+  install_from_default dot.bashrc    /etc/skel/.bashrc
   install_from_default profile       /etc/profile
   install_from_default motd          /etc/motd
   install_directory mnt       755 root
