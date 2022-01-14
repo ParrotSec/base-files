@@ -117,6 +117,7 @@ fi
 if [ "$1" = "configure" ] && [ "$2" != "" ]; then
   update_to_current_default profile       /etc/profile
   update_to_current_default dot.profile   /root/.profile
+  install_from_default dot.bashrc    /etc/skel/.bashrc
   if dpkg --compare-versions "$2" lt-nl "7.7"; then
     install_directory mnt 755 root
   fi
