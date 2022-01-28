@@ -63,7 +63,6 @@ disable samba.service
 disable saned.service
 disable smbd.service
 disable snmpd.service
-disable ssh.service
 disable strongswan-starter.service
 disable stunnel*
 disable winbind.service
@@ -78,3 +77,6 @@ disable xplico.service
 
 # Make sure these services are enabled
 enable resolvconf.service
+# Start ssh by default. will be manually disabled in destkop editions
+# But we need it for cloud and server installations
+enable ssh.service

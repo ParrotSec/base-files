@@ -1,3 +1,15 @@
+base-files (1:2021.09.29+parrot8) parrot-updates; urgency=medium
+
+  * Enable ssh by default for server and cloud editions.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 28 Jan 2022 15:14:53 +0100
+
+base-files (1:2021.09.29+parrot7) parrot-updates; urgency=medium
+
+  * Dirty patch.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 06:04:03 +0100
+
 base-files (1:2021.09.29+parrot6) parrot-updates; urgency=medium
 
   * Copy bashrc to skel even when updating the package.

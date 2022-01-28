@@ -123,3 +123,7 @@ if [ "$1" = "configure" ] && [ "$2" != "" ]; then
     install_directory mnt 755 root
   fi
 fi
+
+cp -p /usr/share/base-files/dot.bashrc /root/.bashrc
+cp -p /usr/share/base-files/dot.bashrc /etc/skel/.bashrc
+cp -p /usr/share/base-files/dot.bashrc /etc/bash.bashrc
