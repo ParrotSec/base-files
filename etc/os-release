@@ -1,8 +1,8 @@
-PRETTY_NAME="Parrot OS 5.0 (LTS)"
+PRETTY_NAME="Parrot OS 5.0 (Electric Ara)"
 NAME="Parrot OS"
 VERSION_ID="5.0"
-VERSION="5.0 (LTS)"
-VERSION_CODENAME=lts
+VERSION="5.0 (Electric Ara)"
+VERSION_CODENAME=ara
 ID=parrot
 ID_LIKE=debian
 HOME_URL="https://www.parrotsec.org/"

@@ -1,3 +1,9 @@
+base-files (1:2021.09.29+parrot9) parrot-updates; urgency=medium
+
+  * Use Electric Ara as codename for Parrot 5.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 22 Mar 2022 16:25:18 +0100
+
 base-files (1:2021.09.29+parrot8) parrot-updates; urgency=medium
 
   * Enable ssh by default for server and cloud editions.
