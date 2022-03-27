@@ -73,6 +73,7 @@ disable udftools.service
 disable python-faraday.service
 disable pure-ftpd.service
 disable xplico.service
+disable xrdp.service
 
 
 # Make sure these services are enabled
