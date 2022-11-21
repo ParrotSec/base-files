@@ -1,3 +1,15 @@
+base-files (1:2022.07.11+parrot2) parrot-updates; urgency=medium
+
+  * Update .bashrc (closes https://gitlab.com/parrotsec/packages/parrot-core/-/issues/1)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 21 Nov 2022 18:11:05 +0100
+
+base-files (1:2022.07.11+parrot1) parrot-updates; urgency=medium
+
+  * Bump new stable version 5.1
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 11 Jul 2022 19:02:19 +0200
+
 base-files (1:2021.09.29+parrot10) parrot-updates; urgency=medium
 
   * Change codename to Electro Ara.

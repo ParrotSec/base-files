@@ -1,7 +1,7 @@
-PRETTY_NAME="Parrot OS 5.0 (Electro Ara)"
+PRETTY_NAME="Parrot OS 5.1 (Electro Ara)"
 NAME="Parrot OS"
-VERSION_ID="5.0"
-VERSION="5.0 (Electro Ara)"
+VERSION_ID="5.1"
+VERSION="5.1 (Electro Ara)"
 VERSION_CODENAME=ara
 ID=parrot
 ID_LIKE=debian
