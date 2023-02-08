@@ -1,3 +1,9 @@
+base-files (1:2022.07.11+parrot3) parrot-updates; urgency=medium
+
+  * Bump new stable version 5.2
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 08 Feb 2023 21:18:31 +0100
+
 base-files (1:2022.07.11+parrot2) parrot-updates; urgency=medium
 
   * Update .bashrc (closes https://gitlab.com/parrotsec/packages/parrot-core/-/issues/1)
