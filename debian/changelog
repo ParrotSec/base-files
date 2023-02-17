@@ -1,3 +1,9 @@
+base-files (1:2022.07.11+parrot4) parrot-updates; urgency=medium
+
+  * Blacklist ospd openvas service.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Feb 2023 17:16:45 +0100
+
 base-files (1:2022.07.11+parrot3) parrot-updates; urgency=medium
 
   * Bump new stable version 5.2
