@@ -8,14 +8,14 @@ ifeq ($(DEB_HOST_GNU_SYSTEM),gnu)
   OSNAME=GNU/Hurd
 endif
 
-VENDORFILE = parrot
+VENDORFILE = debian
 DESTDIR = debian/base-files
 
 %:
 	dh $@
 
 override_dh_auto_build:
-	sed -e "s&#OSNAME#&$(OSNAME)&g" debian/copyright.in > debian/copyright
+	sh debian/check-md5sum-etc profile
 	sed -e "s/#VENDORFILE#/$(VENDORFILE)/g" debian/postinst.in > debian/postinst
 
 override_dh_auto_install:
@@ -35,6 +35,9 @@ endif
 	sed -e "s&#OSNAME#&$(OSNAME)&g" etc/os-release > $(DESTDIR)/etc/os-release
 	mv $(DESTDIR)/etc/os-release $(DESTDIR)/usr/lib/os-release
 	ln -s ../usr/lib/os-release $(DESTDIR)/etc/os-release
+
+override_dh_installchangelogs:
+	dh_installchangelogs --no-trim
 
 override_dh_link:
 	dh_link -X os-release

@@ -1,113 +1,77 @@
-base-files (1:2023.04.24+parrot1) parrot-updates; urgency=medium
+base-files (2:6.0+parrot1) lory; urgency=medium
 
-  * Bump new stable version 5.3
+  * Fork package for Parrot Security 6.0.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 24 Apr 2023 16:52:43 +0200
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 25 Jul 2023 20:16:48 +0200
 
-base-files (1:2022.07.11+parrot4) parrot-updates; urgency=medium
+base-files (12.4+deb12u1) bookworm; urgency=medium
 
-  * Blacklist ospd openvas service.
+  * Change /etc/debian_version to 12.1, for Debian 12.1 point release.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Feb 2023 17:16:45 +0100
+ -- Santiago Vila <sanvila@debian.org>  Fri, 14 Jul 2023 18:00:00 +0200
 
-base-files (1:2022.07.11+parrot3) parrot-updates; urgency=medium
+base-files (12.4) unstable; urgency=medium
 
-  * Bump new stable version 5.2
+  * Release candidate for bookworm as stable:
+  - Use "12" as version in /etc/issue and /etc/issue.net.
+    (never expected to change after release)
+  - Use 12.0 as version in /etc/debian_version.
+    (expected to change at every point release)
+  - Change PRETTY_NAME in /usr/lib/os-release, adding 12 as version number
+    and "(bookworm)" as codename. Add also VERSION_ID and VERSION.
+    (never expected to change)
+  - Variable VERSION_CODENAME was already defined as "bookworm".
+  - Update README (bookworm -> trixie).
+  * Refresh GFDL-1.2, GFDL-1.3, GPL-3, LGPL-2 and LGPL-3 from their
+    canonical place at https://ftp.gnu.org/gnu/Licenses/ as they have
+    minor editorial changes like trimming spaces, https, etc.
+  * Drop debian/current-md5sums-obsolete. Closes: #1009358.
+  * Ship a real debian/copyright file in source package instead of
+    generating it at build time.
+  * Call dh_installchangelogs using --no-trim option.
+    Add versioned build-dependency on debhelper for the above.
+  * Update lintian-overrides to new format.
+  * Rules-Requires-Root: binary-targets.
+  * Update standards version to 4.6.2.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 08 Feb 2023 21:18:31 +0100
+ -- Santiago Vila <sanvila@debian.org>  Thu, 02 Mar 2023 14:55:00 +0100
 
-base-files (1:2022.07.11+parrot2) parrot-updates; urgency=medium
+base-files (12.3) unstable; urgency=high
 
-  * Update .bashrc (closes https://gitlab.com/parrotsec/packages/parrot-core/-/issues/1)
+  * Add VERSION_CODENAME to /etc/os-release. Closes: #1008735.
+    This still respects the fact that Debian distributions do not have
+    a version number until they are actually released as stable, but makes
+    /etc/os-release a little bit more useful for those who use testing as
+    a pre-release for the next stable. Those users are also the reason why
+    in this case we are simply using the string "bookworm".
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 21 Nov 2022 18:11:05 +0100
+ -- Santiago Vila <sanvila@debian.org>  Mon, 03 Oct 2022 23:30:00 +0200
 
-base-files (1:2022.07.11+parrot1) parrot-updates; urgency=medium
+base-files (12.2) unstable; urgency=medium
 
-  * Bump new stable version 5.1
+  * A simplified version of the patch for DPKG_ROOT was applied, but the
+    simplification went too far and was incorrect. Closes: #824594.
+  * Use $() instead of `` when calling md5sum.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 11 Jul 2022 19:02:19 +0200
+ -- Santiago Vila <sanvila@debian.org>  Wed, 19 Jan 2022 23:35:00 +0100
 
-base-files (1:2021.09.29+parrot10) parrot-updates; urgency=medium
+base-files (12.1) unstable; urgency=medium
 
-  * Change codename to Electro Ara.
-  * Disable xrdp service.
+  * Add support for DPKG_ROOT to postinst. Closes: #824594
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 27 Mar 2022 16:19:56 +0200
+ -- Santiago Vila <sanvila@debian.org>  Wed, 19 Jan 2022 22:40:00 +0100
 
-base-files (1:2021.09.29+parrot9) parrot-updates; urgency=medium
+base-files (12) unstable; urgency=medium
 
-  * Use Electric Ara as codename for Parrot 5.
+  * Do not create /var/run/utmp in postinst, as /var/run is
+    ephemeral and it does not make sense. Closes: #989725.
+  * Do not create /var/lib/dpkg/status if missing anymore,
+    as dpkg already does that. Closes: #989726.
+  * Change issue, issue.net, debian_version and os-release to read
+    "bookworm/sid". Closes: #992369.
+  * Drop VERSION, VERSION_ID and CODENAME from os-release.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 22 Mar 2022 16:25:18 +0100
-
-base-files (1:2021.09.29+parrot8) parrot-updates; urgency=medium
-
-  * Enable ssh by default for server and cloud editions.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 28 Jan 2022 15:14:53 +0100
-
-base-files (1:2021.09.29+parrot7) parrot-updates; urgency=medium
-
-  * Dirty patch.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 06:04:03 +0100
-
-base-files (1:2021.09.29+parrot6) parrot-updates; urgency=medium
-
-  * Copy bashrc to skel even when updating the package.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 05:47:40 +0100
-
-base-files (1:2021.09.29+parrot5) parrot-updates; urgency=medium
-
-  * Use postinst to copy bashrc.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 04:34:07 +0100
-
-base-files (1:2021.09.29+parrot4) parrot-updates; urgency=medium
-
-  * Woops. don't copy .profile in skel.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 03:34:39 +0100
-
-base-files (1:2021.09.29+parrot3) parrot-updates; urgency=medium
-
-  * Fix missing bashrc in skel.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 03:18:30 +0100
-
-base-files (1:2021.09.29+parrot2) parrot-updates; urgency=medium
-
-  * Update os-release.
-    + Fixes wrong ID and ID_LIKE fields
-    + Adds LTS as temporary codename.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 01:57:43 +0100
-
-base-files (1:2021.09.29+parrot1) lts-updates; urgency=medium
-
-  * Rebuild package.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 18:34:52 +0100
-
-base-files (1:2021.09.29) lts-updates; urgency=medium
-
-  * Blacklist strongswan daemon.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Sep 2021 02:21:24 +0200
-
-base-files (1:2021.08.16) lts-updates; urgency=medium
-
-  * Make use of proper vendor file.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 16 Aug 2021 05:22:05 +0200
-
-base-files (1:2021.07.30) lts; urgency=medium
-
-  * Update for Parrot 5.0 LTS.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 30 Jul 2021 20:53:02 +0200
+ -- Santiago Vila <sanvila@debian.org>  Sun, 22 Aug 2021 19:00:00 +0200
 
 base-files (11.1) unstable; urgency=medium
 
@@ -141,126 +105,30 @@ base-files (11) unstable; urgency=medium
 
  -- Santiago Vila <sanvila@debian.org>  Tue, 09 Jul 2019 12:05:50 +0200
 
-base-files (1:2021.03.12) rolling; urgency=medium
+base-files (10.3) unstable; urgency=medium
 
-  * Bump Parrot 4.11 version.
-  * Fix wrong /etc/dpkg/origins/default info.
-  * Update project website in dpkg origins.
+  * Add Breaks: debian-security-support (<< 2019.04.25). Closes: #928172.
+    This is the first version of debian-security-support which does not break
+    when /etc/debian_version contains a string in the form "10.x".
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 12 Mar 2021 21:15:40 +0100
+ -- Santiago Vila <sanvila@debian.org>  Mon, 13 May 2019 22:25:32 +0200
 
-base-files (1:2020.06.1) rolling; urgency=medium
+base-files (10.2) unstable; urgency=medium
 
-  * Fix missing motd file.
+  * Release candidate for buster as stable:
+  - Use "10" as version in /etc/issue and /etc/issue.net.
+    (never expected to change after buster is released)
+  - Use 10.0 as version in /etc/debian_version.
+    (expected to change at every point release)
+  - Change PRETTY_NAME in /usr/lib/os-release, adding 10 as version number
+    and "(buster)" as codename. Add also VERSION_ID and VERSION.
+    (never expected to change)
+  - Add VERSION_CODENAME to os-release. Closes: #829245. This is optional
+    according to the specs but some people find it useful. Please note that
+    for now this is only expected to be present on stable releases.
+  - Update README (buster -> bullseye).
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jun 2020 19:17:51 +0200
-
-base-files (1:2020.06) rolling; urgency=medium
-
-  * Bump Parrot 4.10 version.
-  * Update motd.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jun 2020 18:35:45 +0200
-
-base-files (1:2020.04parrot1) rolling; urgency=medium
-
-  * Bump Parrot 4.9 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 26 Apr 2020 18:35:13 +0200
-
-base-files (1:2020.01parrot1) rolling-testing; urgency=medium
-
-  * Bump Parrot 4.8 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 30 Jan 2020 14:53:48 +0100
-
-base-files (1:2019.05parrot1) testing; urgency=medium
-
-  * Bump Parrot 4.7 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 22 May 2019 17:50:49 +0200
-
-base-files (1:2019.03parrot1) testing; urgency=medium
-
-  * Bump Parrot 4.6 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 20 Mar 2019 00:43:46 +0100
-
-base-files (1:2019.01parrot1) testing; urgency=medium
-
-  * Bump Parrot 4.5 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 11 Jan 2019 23:27:18 +0100
-
-base-files (1:2018.11parrot1) testing; urgency=medium
-
-  * Bump Parrot 4.4 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 17 Nov 2018 03:26:38 +0100
-
-base-files (1:2018.10parrot2) testing; urgency=medium
-
-  * Make ll show human readable sizes in .bashrc.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Nov 2018 21:29:58 +0100
-
-base-files (1:2018.10parrot1) testing; urgency=medium
-
-  * Don't overwrite existing PATH in /etc/dot.bashrc.
-  * Add /snap/bin to PATH.
-  * Bump Parrot 4.3 version.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 13 Oct 2018 01:51:03 +0200
-
-base-files (1:2018.09parrot2) testing; urgency=medium
-
-  * Bump Parrot version 4.2.2.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Sep 2018 17:05:06 +0200
-
-base-files (1:2018.09parrot1) testing; urgency=medium
-
-  * Bump Parrot version 4.2.1.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Sep 2018 23:40:43 +0200
-
-base-files (1:2018.08parrot1) testing; urgency=medium
-
-  * Update version files in /etc for Parrot 4.2.
-  * Disable pcscd in systemd settings.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 09 Aug 2018 18:48:30 +0200
-
-base-files (1:2018.06parrot2) testing; urgency=medium
-
-  * Update version files in /etc for Parrot 4.1.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 03 Jun 2018 18:21:37 +0200
-
-base-files (1:2018.06parrot1) testing; urgency=medium
-
-  * Update for Parrot 4.1.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 02 Jun 2018 01:27:29 +0200
-
-base-files (1:2018.05parrot1) testing; urgency=medium
-
-  * Update for Parrot 4.0.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 11 May 2018 04:47:21 +0200
-
-base-files (1:2018.04parrot2) testing; urgency=medium
-
-  * Minor fixes.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 27 Apr 2018 03:14:12 +0200
-
-base-files (1:2018.04parrot1) testing; urgency=medium
-
-  * Import new Debian version.
-  * Bump new parrot version (4.0-beta).
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 27 Apr 2018 02:24:43 +0200
+ -- Santiago Vila <sanvila@debian.org>  Fri, 19 Apr 2019 13:05:00 +0200
 
 base-files (10.1) unstable; urgency=medium
 
@@ -278,59 +146,46 @@ base-files (10.1) unstable; urgency=medium
 
  -- Santiago Vila <sanvila@debian.org>  Sun, 14 Jan 2018 00:36:34 +0100
 
-base-files (1:2018.01parrot1) testing; urgency=medium
+base-files (10) unstable; urgency=medium
 
-  * Bump new parrot version (3.11)
+  * Change issue, issue.net, debian_version and os-release to read
+    "buster/sid", and drop VERSION and VERSION_ID from os-release.
+  * Fix typo in changelog for version 9.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 09 Jan 2018 13:05:26 +0100
+ -- Santiago Vila <sanvila@debian.org>  Mon, 26 Jun 2017 00:19:42 +0200
 
-base-files (1:2017.11parrot0) testing; urgency=medium
+base-files (9.9) unstable; urgency=medium
 
-  * Bump new parrot version (3.10 Intruder).
+  * Add MPL-1.1 and MPL-2.0 to common-licenses. Closes: #849835.
+    License texts taken from https://www.mozilla.org/en-US/MPL/.
+  * Add a default /etc/update-motd.d/10-uname script to
+    recover the traditional motd behaviour. Closes: #859124.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 15 Nov 2017 11:05:02 +0100
+ -- Santiago Vila <sanvila@debian.org>  Tue, 04 Apr 2017 18:00:30 +0200
 
-base-files (1:2017.10parrot0) testing; urgency=medium
+base-files (9.8) unstable; urgency=medium
 
-  * Bump new Parrot version (3.9 Intruder).
+  * Release candidate for stretch as stable:
+  - Use "9" as version in /etc/issue and /etc/issue.net.
+    (never expected to change after stretch is released)
+  - Use 9.0 as version in /etc/debian_version.
+    (expected to change at every point release)
+  - Change PRETTY_NAME in /usr/lib/os-release, adding 9 as version number
+    and "(stretch)" as codename. Add also VERSION_ID and VERSION.
+    (never expected to change)
+  - Update README (stretch -> buster).
+  * Standards-Version: 3.9.8 (no special changes for this).
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 14 Oct 2017 23:36:16 +0200
+ -- Santiago Vila <sanvila@debian.org>  Sun, 15 Jan 2017 23:00:02 +0100
 
-base-files (1:2017.8parrot0) testing; urgency=medium
+base-files (9.7) unstable; urgency=medium
 
-  * Update for Parrot 3.8.
+  * Do not care about /etc/nsswitch.conf anymore, as the file has been
+    moved to libc-bin. Closes: #827095.
+  [ Guillem Jover ]
+  * Do not use gzip compression anymore to build .deb and use the default.
 
- -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Thu, 31 Aug 2017 02:37:09 +0200
-
-base-files (1:2017.6parrot0) testing; urgency=medium
-
-  * Update for Parrot 3.7.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jun 2017 19:44:44 +0200
-
-base-files (1:2017.4parrot0) testing; urgency=medium
-
-  * Update for Parrot 3.6.
-
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 18 Apr 2017 16:46:26 +0200
-
-base-files (1:2017.2parrot0) testing; urgency=medium
-
-  * Update for Parrot GNU/Linux 3.5.
-
- -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Fri, 17 Feb 2017 03:57:22 +1100
-
-base-files (1:2016.4parrot1) testing; urgency=medium
-
-  * Minor fixes
-
- -- Lorenzo "Palinuro" Faletra <eclipse@frozenbox.org>  Sun, 17 Apr 2016 22:41:11 +0200
-
-base-files (1:2016.4parrot0) testing; urgency=medium
-
-  * Updated for Parrot 3.0
-
- -- Lorenzo "Palinuro" Faletra <eclipse@frozenbox.org>  Sun, 17 Apr 2016 00:45:16 +0200
+ -- Santiago Vila <sanvila@debian.org>  Sun, 27 Nov 2016 19:29:38 +0100
 
 base-files (9.6) unstable; urgency=low
 
@@ -394,7 +249,7 @@ base-files (9) unstable; urgency=medium
 
   * Changed issue, issue.net, debian_version and os-release to read
     "stretch/sid", and dropped VERSION and VERSION_ID from os-release.
-  * Changed HOME_URL and SUPPORT_URL is os-release from http to https,
+  * Changed HOME_URL and SUPPORT_URL in os-release from http to https,
     as those are the preferred URLs now.
 
  -- Santiago Vila <sanvila@debian.org>  Thu, 30 Apr 2015 12:00:50 +0200
