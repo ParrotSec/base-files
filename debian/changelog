@@ -1,3 +1,9 @@
+base-files (2:6.0+parrot2) lory; urgency=medium
+
+  * Update bashrc and profile in /etc/skel.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 15 Dec 2023 13:46:24 +0100
+
 base-files (2:6.0+parrot1) lory; urgency=medium
 
   * Fork package for Parrot Security 6.0.
