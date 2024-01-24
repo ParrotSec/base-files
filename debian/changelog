@@ -1,3 +1,9 @@
+base-files (2:6.0+parrot3) lory-updates; urgency=medium
+
+  * Fix bashrc file and sync with parrot-core.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 24 Jan 2024 14:40:28 +0100
+
 base-files (2:6.0+parrot2) lory; urgency=medium
 
   * Update bashrc and profile in /etc/skel.
