@@ -1,3 +1,9 @@
+base-files (2:6.0+parrot4) lory-updates; urgency=medium
+
+  * Skip md5 verification of share files, we don't need it.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 24 Jan 2024 15:01:24 +0100
+
 base-files (2:6.0+parrot3) lory-updates; urgency=medium
 
   * Fix bashrc file and sync with parrot-core.
