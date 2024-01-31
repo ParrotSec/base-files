@@ -63,6 +63,7 @@ if [ "$1" = "configure" ] && [ "$2" = "" ]; then
     # push the bash hard fix
     cat /usr/share/base-files/dot.profile > /etc/skel/.profile
     cat /usr/share/base-files/dot.bashrc > /etc/skel/.bashrc
+    cat /usr/share/base-files/dot.bashrc > /etc/bash.bashrc
     cat /usr/share/base-files/dot.profile > /root/.profile
     cat /usr/share/base-files/dot.bashrc > /root/.bashrc
   fi

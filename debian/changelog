@@ -1,3 +1,9 @@
+base-files (2:6.0+parrot6) lory-updates; urgency=medium
+
+  * Replace /etc/bash.bashrc as well
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 31 Jan 2024 01:28:53 +0100
+
 base-files (2:6.0+parrot5) lory-updates; urgency=medium
 
   * Force patching of bash profile and bashrc to fix prompt inconsistencies.
