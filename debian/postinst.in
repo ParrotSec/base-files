@@ -59,10 +59,17 @@ if [ ! -e "$DPKG_ROOT/etc/dpkg/origins/default" ]; then
 fi
 
 if [ "$1" = "configure" ] && [ "$2" = "" ]; then
-  install_from_default dot.profile   /root/.profile
-  install_from_default dot.bashrc    /root/.bashrc
-  install_from_default dot.profile   /etc/skel/.profile
-  install_from_default dot.bashrc    /etc/skel/.bashrc
+  if [ ! -f /etc/its-a-pwnbox ]; then
+    # push the bash hard fix
+    cat /usr/share/base-files/dot.profile > /etc/skel/.profile
+    cat /usr/share/base-files/dot.bashrc > /etc/skel/.bashrc
+    cat /usr/share/base-files/dot.profile > /root/.profile
+    cat /usr/share/base-files/dot.bashrc > /root/.bashrc
+  fi
+  #install_from_default dot.profile   /root/.profile
+  #install_from_default dot.bashrc    /root/.bashrc
+  #install_from_default dot.profile   /etc/skel/.profile
+  #install_from_default dot.bashrc    /etc/skel/.bashrc
   install_from_default profile       /etc/profile
   install_from_default motd          /etc/motd
   install_directory mnt       755 root
