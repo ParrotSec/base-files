@@ -64,6 +64,7 @@ if [ "$1" = "configure" ] && [ "$2" = "" ]; then
     cat /usr/share/base-files/dot.profile > /etc/skel/.profile
     cat /usr/share/base-files/dot.bashrc > /etc/skel/.bashrc
     cat /usr/share/base-files/dot.bashrc > /etc/bash.bashrc
+    cat /usr/share/base-files/dot.profile > /etc/profile
     cat /usr/share/base-files/dot.profile > /root/.profile
     cat /usr/share/base-files/dot.bashrc > /root/.bashrc
   fi
@@ -71,7 +72,7 @@ if [ "$1" = "configure" ] && [ "$2" = "" ]; then
   #install_from_default dot.bashrc    /root/.bashrc
   #install_from_default dot.profile   /etc/skel/.profile
   #install_from_default dot.bashrc    /etc/skel/.bashrc
-  install_from_default profile       /etc/profile
+  #install_from_default profile       /etc/profile
   install_from_default motd          /etc/motd
   install_directory mnt       755 root
   install_directory srv       755 root

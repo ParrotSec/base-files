@@ -1,3 +1,9 @@
+base-files (2:6.0+parrot7) lory-updates; urgency=medium
+
+  * Update bashrc file just updated by a recent bash update.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 03 Apr 2024 02:42:58 +0200
+
 base-files (2:6.0+parrot6) lory-updates; urgency=medium
 
   * Replace /etc/bash.bashrc as well
