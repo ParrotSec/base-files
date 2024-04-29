@@ -1,3 +1,9 @@
+base-files (2:6.1+parrot1) lory; urgency=medium
+
+  * Release for Parrot 6.1.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 29 Apr 2024 19:17:33 +0200
+
 base-files (2:6.0+parrot7) lory-updates; urgency=medium
 
   * Update bashrc file just updated by a recent bash update.
