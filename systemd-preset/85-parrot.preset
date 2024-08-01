@@ -1,6 +1,6 @@
 # Parrot-specific service presets
 # Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
-# Last-Updated: 2021-07-30 20:48 UTC+2
+# Last-Updated: 2024-08-01 18:34 UTC+2
 
 # We don't need that shit
 disable systemd-timesyncd.service

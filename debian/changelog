@@ -1,3 +1,9 @@
+base-files (2:6.2+parrot1) lory; urgency=medium
+
+  * Release for Parrot 6.2
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Aug 2024 18:34:42 +0200
+
 base-files (2:6.1+parrot1) lory; urgency=medium
 
   * Release for Parrot 6.1.
