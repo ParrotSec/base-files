@@ -10,9 +10,9 @@ if [ "${PS1-}" ]; then
     fi
   else
     if [ "$(id -u)" -eq 0 ]; then
-      PS1='# '
+      PS1='┌──[\u@\h]─[\w]\n└──╼ \$#'
     else
-      PS1='$ '
+      PS1='┌──[\u@\h]─[\w]\n└──╼ \$'
     fi
   fi
 fi

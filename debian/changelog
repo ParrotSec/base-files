@@ -1,3 +1,9 @@
+base-files (2:6.3+parrot2) lory; urgency=medium
+
+  * Update bash configuration. Align with parrot-core.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 20 Jan 2025 02:26:44 +0100
+
 base-files (2:6.3+parrot1) lory; urgency=medium
 
   * Bump os-release version to 6.3.
