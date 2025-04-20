@@ -1,6 +1,10 @@
-base-files (2:6.3+parrot2.1) lory; urgency=medium
+base-files (2:6.4+parrot1) lory; urgency=medium
 
+  [ Maysec ]
   * Re-enable bash auto completion. Align with parrot-core
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Bump version for Parrot 6.4 release.
 
  -- Maysec <<26233046-MaycoSec@users.noreply.gitlab.com>>  Sun, 20 Apr 2025 15:11:29 -0400
 
