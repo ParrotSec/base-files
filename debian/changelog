@@ -1,3 +1,9 @@
+base-files (2:6.3+parrot2.1) lory; urgency=medium
+
+  * Re-enable bash auto completion. Align with parrot-core
+
+ -- Maysec <<26233046-MaycoSec@users.noreply.gitlab.com>>  Sun, 20 Apr 2025 15:11:29 -0400
+
 base-files (2:6.3+parrot2) lory; urgency=medium
 
   * Update bash configuration. Align with parrot-core.
