@@ -1,3 +1,10 @@
+base-files (2:6.4+parrot2) lory; urgency=medium
+
+  * Sync bashrc and profile with parrot-core.
+  * Release Parrot 6.4.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 08 Jun 2025 04:16:30 +0200
+
 base-files (2:6.4+parrot1) lory; urgency=medium
 
   [ Maysec ]
@@ -6,7 +13,7 @@ base-files (2:6.4+parrot1) lory; urgency=medium
   [ Lorenzo "Palinuro" Faletra ]
   * Bump version for Parrot 6.4 release.
 
- -- Maysec <<26233046-MaycoSec@users.noreply.gitlab.com>>  Sun, 20 Apr 2025 15:11:29 -0400
+ -- Maysec <26233046-MaycoSec@users.noreply.gitlab.com>  Sun, 20 Apr 2025 15:11:29 -0400
 
 base-files (2:6.3+parrot2) lory; urgency=medium
 

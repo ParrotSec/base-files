@@ -1,7 +1,7 @@
 Source: base-files
 Section: admin
 Priority: required
-Maintainer: Lorenzo Palinuro Faletra <palinuro@parrotsec.org>
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 4.6.2
 Build-Depends: debhelper-compat (= 13), debhelper (>= 13.10~)
 Rules-Requires-Root: binary-targets
