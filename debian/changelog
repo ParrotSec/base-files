@@ -1,3 +1,9 @@
+base-files (2:7.0+parrot1) echo; urgency=medium
+
+  * Release Parrot 7.0.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 20 Sep 2025 10:48:00 +0200
+
 base-files (2:6.4+parrot2) lory; urgency=medium
 
   * Sync bashrc and profile with parrot-core.

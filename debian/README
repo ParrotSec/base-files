@@ -4,10 +4,10 @@ Frequently Asked Questions about base-files
 * Questions about /etc/issue and /etc/debian_version:
 
 Q. I upgraded my system to the testing distribution and now my /etc/issue
-says "trixie/sid". Should it not read "trixie" or "testing"?
+says "forky/sid". Should it not read "forky" or "testing"?
 
 Q. I upgraded my system to the unstable distribution and now my /etc/issue
-says "trixie/sid". Should it not read "sid" or "unstable"?
+says "forky/sid". Should it not read "sid" or "unstable"?
 
 A. That would be nice, but it is not possible because of the way the
 testing distribution works. Packages uploaded for unstable reach
@@ -17,9 +17,9 @@ testing. You should consider the testing and unstable distributions as
 two sides of the same coin. Since the base-files package in testing
 was initially uploaded for unstable, the only sensible /etc/issue to
 have is one that is both valid for testing and unstable, hence
-"trixie/sid" (or whatever is appropriate).
+"forky/sid" (or whatever is appropriate).
 
-Q. Why "trixie/sid" and not "testing/unstable" as it used to be?
+Q. Why "forky/sid" and not "testing/unstable" as it used to be?
 
 A. The codename is a little bit more informative, as the meaning of
 "testing" changes over time.
@@ -31,7 +31,7 @@ not a reliable way to know that anymore. Looking at the contents of
 your /etc/apt/sources.list file is probably a much better way.
 
 Q. There is a new point release and I've just upgraded my system.
-The /etc/debian_version file now says 10.x but /etc/issue still says 10.
+The /etc/debian_version file now says 13.x but /etc/issue still says 13.
 Is this ok?
 
 A. Yes. The release managers asked me not to touch /etc/issue, as that's
@@ -95,5 +95,12 @@ freedom to remove those directories without them being created again
 when base-files is upgraded. Therefore, if you are running any sort of
 compliance tests, you should do it on newly installed systems only.
 
+Q. My system (when I do "dpkg -s base-files") shows /etc/profile as
+an "obsolete conffile". Is this ok?
+
+A. Yes. The file was handled by base-files as a conffile in the dpkg sense
+in the past, so dpkg may consider the file as an obsolete conffile.
+There is currently not a way to tell dpkg to unregister it as a conffile
+without removing it, so the best approach for now is to do nothing about it.
 
 Santiago Vila <sanvila@debian.org>
