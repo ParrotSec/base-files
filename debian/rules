@@ -56,7 +56,7 @@ endif
 	sed -e "s&#OSNAME#&$(OSNAME)&g" etc/os-release > $(DESTDIR)/etc/os-release
 	mv $(DESTDIR)/etc/os-release $(DESTDIR)/usr/lib/os-release
 	ln -s ../usr/lib/os-release $(DESTDIR)/etc/os-release
-	install -p -m 644 systemd-preset/*    $(DESTDIR)/lib/systemd/system-preset
+	install -p -m 644 systemd-preset/*    $(DESTDIR)/usr/lib/systemd/system-preset
 
 override_dh_installchangelogs:
 	dh_installchangelogs --no-trim
