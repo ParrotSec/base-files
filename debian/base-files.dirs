@@ -15,6 +15,7 @@ tmp
 usr
 usr/games
 usr/include
+usr/lib/systemd/system-preset
 usr/share
 usr/share/base-files
 usr/share/common-licenses
@@ -36,4 +37,3 @@ var/log
 var/run
 var/spool
 var/tmp
-lib/systemd/system-preset
