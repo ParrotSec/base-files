@@ -1,3 +1,9 @@
+base-files (2:7.0+parrot3) echo; urgency=medium
+
+  * Sync bashrc with parrot-core.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Dec 2025 21:41:14 +0100
+
 base-files (2:7.0+parrot2) echo; urgency=medium
 
   * Move systemd-preset to /usr/bin to prevent bootstrap failure.
