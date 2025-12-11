@@ -1,3 +1,9 @@
+base-files (2:7.0+parrot4) echo; urgency=medium
+
+  * Update systemd preset to disable more services.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 11 Dec 2025 15:36:45 +0100
+
 base-files (2:7.0+parrot3) echo; urgency=medium
 
   * Sync bashrc with parrot-core.
