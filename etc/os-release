@@ -1,9 +1,9 @@
-PRETTY_NAME="Parrot Security 7.0 (echo)"
+PRETTY_NAME="Parrot Security 7.1 (echo)"
 NAME="Parrot Security"
-VERSION_ID="7.0"
-VERSION="7.0 (echo)"
+VERSION_ID="7.1"
+VERSION="7.1 (echo)"
 VERSION_CODENAME=echo
-DEBIAN_VERSION_FULL=7.0
+DEBIAN_VERSION_FULL=7.1
 ID=debian
 HOME_URL="https://www.parrotsec.org/"
 SUPPORT_URL="https://www.parrotsec.org/docs"

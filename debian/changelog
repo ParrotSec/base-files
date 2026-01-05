@@ -1,3 +1,9 @@
+base-files (2:7.1+parrot1) echo; urgency=medium
+
+  * Release Parrot 7.1
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 05 Jan 2026 15:49:54 +0100
+
 base-files (2:7.0+parrot4) echo; urgency=medium
 
   * Update systemd preset to disable more services.
