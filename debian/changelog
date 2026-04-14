@@ -1,5 +1,11 @@
 base-files (2:7.1+parrot1) echo; urgency=medium
 
+  * Release Parrot 7.2
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 14 Apr 2026 13:49:04 +0200
+
+base-files (2:7.1+parrot1) echo; urgency=medium
+
   * Release Parrot 7.1
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 05 Jan 2026 15:49:54 +0100
