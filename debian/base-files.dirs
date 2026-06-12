@@ -23,6 +23,7 @@ usr/share/dict
 usr/share/info
 usr/share/lintian/overrides
 usr/share/man
+usr/share/metainfo
 usr/share/misc
 usr/src
 var

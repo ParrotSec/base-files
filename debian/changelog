@@ -1,3 +1,10 @@
+base-files (2:7.3+parrot1) echo; urgency=medium
+
+  * Add metainfo for appstream and packagekit.
+  * Release Parrot 7.3
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 12 Jun 2026 16:31:48 +0200
+
 base-files (2:7.2+parrot1) echo; urgency=medium
 
   * Release Parrot 7.2

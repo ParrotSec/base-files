@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="operating-system">
+  <id>org.parrotsec.parrot</id>
+  <metadata_license>FSFAP</metadata_license>
+  <name>Parrot Security</name>
+  <summary>Security-oriented operating system based on Debian</summary>
+  <description>
+    <p>Parrot Security is a Debian-based distribution focused on security, privacy and software development.</p>
+  </description>
+  <url type="homepage">https://parrotsec.org</url>
+  <developer id="org.parrotsec">
+    <name>Parrot Security</name>
+  </developer>
+  <releases>
+    <release version="7.3" type="stable" date="2026-06-15"/>
+    <release version="7.2" type="stable" date="2026-04-14"/>
+    <release version="7.1" type="stable" date="2026-01-09"/>
+  </releases>
+</component>
