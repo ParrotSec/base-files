@@ -1,0 +1,7 @@
+2255054e61cee1a99dbe893377820dde 9.6 to 11 (Debian default, Parrot 2021.07.30 era)
+48a30a427d1794feb49f102b87ddce2b 11.1 to 2021.09.29 (Debian default, Parrot 2021.09.29+parrot8)
+fb2d03676fed0a26904172ab7d0640f5 6.0+parrot3 (full PATH for all users)
+9926b56bc6e576d4ad206dd82d38deff 6.0+parrot5 (no PATH line, rely on profile.d)
+149bb06b7a8b29924f5fd53c02b14173 6.4+parrot2
+b0d7604e70b607d06011c8f8f38a9503 7.0+parrot1 to 7.2+parrot1 (broken PATH, missing /usr/sbin)
+fa540f2c740e9bf6e4f46df1a0437b03 7.3+parrot2 to current (fixed PATH)

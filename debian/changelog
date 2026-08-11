@@ -1,3 +1,14 @@
+base-files (2:7.3+parrot2) echo; urgency=medium
+
+  * Fix corrupted PATH in /etc/profile (share/profile)
+    making ifconfig, iwconfig, poweroff and reboot unavailable 
+    even in login shells.
+  * Ship share/profile.md5sums again (and re-enable its build check) so
+    update_to_current_default can replace the broken default profile on
+    upgrades.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Tue, 11 Aug 2026 15:12:00 +0200
+
 base-files (2:7.3+parrot1) echo; urgency=medium
 
   * Add metainfo for appstream and packagekit.
