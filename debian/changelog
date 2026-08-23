@@ -1,3 +1,11 @@
+base-files (2:7.4+parrot1) echo; urgency=medium
+
+  * FIX: removing "::" typo in PATH.
+  * Bump distro version to 7.4.
+  * Bump base debian version to 13.6.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 23 Aug 2026 16:03:16 +0200
+
 base-files (2:7.3+parrot1) echo; urgency=medium
 
   * Add metainfo for appstream and packagekit.
