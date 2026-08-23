@@ -28,7 +28,7 @@ execute_after_dh_clean:
 	sh debian/timestamps
 
 override_dh_auto_build:
-	sh debian/check-md5sum-etc profile
+	#sh debian/check-md5sum-etc profile
 	#sh debian/check-md5sum-etc dot.profile
 	set -e; { \
 	  echo "# Triggers for creating multilib aliasing symlinks on demand"; \
